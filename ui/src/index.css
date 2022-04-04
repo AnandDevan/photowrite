@@ -1,0 +1,90 @@
+/*body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+*/
+html, body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+/*.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+*/
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+#myCanvas {
+  width: 100%;
+  height: 100%;
+}
+
+.message-height {
+  height: 87.5vh;
+}
+
+.messages-panel {
+  /*color: red;*/
+  background-color: #F1EB9C;
+  /*background-color: #F7E594;*/
+  /*background-color: #FFFA5C;*/
+  padding-left: 0;
+  color: #1434A4;
+}
+
+.message-input {
+  background-color: #FFFDD0;
+}
+
+.message-item {
+  border-bottom-color: #0096FF;
+  white-space: pre-line;
+}

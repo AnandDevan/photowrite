@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  //.w3-card-4
+  div(id="container")
+    canvas(id="myCanvas")
+  form(method="POST" action="/upload-image" enctype="multipart/form-data")
+    div
+      label("Select image to annotate:")
+      input(type="file" name="image-upload")
+    div
+      input(type="submit" id="upload_image" name="btn_upload_profile_pic" value="Upload")
+
+    include paper.pug
+  style
+    include style.css
