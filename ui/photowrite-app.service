@@ -1,0 +1,13 @@
+[Unit]
+Description=Photowrite app service
+After=network.target
+StartLimitIntervalSec=0
+
+
+[Service]
+Environment=PORT=3000
+Type=simple
+User=root
+Restart=on-failure
+WorkingDirectory=/root/photowrite/ui
+ExecStart=/usr/bin/npm start
