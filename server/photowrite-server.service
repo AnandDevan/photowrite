@@ -1,0 +1,13 @@
+[Unit]
+Description=Photowrite server service
+After=network.target
+StartLimitIntervalSec=0
+
+
+[Service]
+Environment=PORT=3001
+Type=simple
+User=root
+Restart=on-failure
+WorkingDirectory=/root/photowrite/server
+ExecStart=/usr/bin/npm start
